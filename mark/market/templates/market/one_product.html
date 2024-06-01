@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-img {
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .product-details {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .product-name {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .product-description {
+            font-size: 1em;
+            color: #666;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="{{ product.imagine_produs.url }}">
+        <div class="product-details">
+            <div class="product-name">{{product.nume_produs}}</div>
+            <div class="product-price">{{product.pret}}</div>
+            <div class="product-description">{{product.descriere}}
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
