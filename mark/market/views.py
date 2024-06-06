@@ -1,5 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse
+from django.contrib.auth.models import AnonymousUser
 from .models import Product
 
 def index(request):
@@ -21,5 +22,10 @@ def single_product(request, product_id):
 
 def about(request):
     return render(request, "market/about.html")
+
+
+
+
+
 
 

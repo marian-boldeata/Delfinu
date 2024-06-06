@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'market.apps.MarketConfig',
     'register.apps.RegisterConfig',
+    'cart.apps.CartConfig'
 
 ]
 
@@ -127,4 +128,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = 'imagini_produs/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'imagini_produs/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'imagini_produs')

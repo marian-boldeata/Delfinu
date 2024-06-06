@@ -14,10 +14,13 @@ class Product(models.Model):
     descriere = models.CharField(max_length=200,default="...")
     pret = models.IntegerField(null=False,default=1)
     cantitate = models.IntegerField(default=1)
-    imagine_produs = models.ImageField(upload_to="imagini_produs/", default="mark/no img available")
+    imagine_produs = models.ImageField(upload_to="imagini_produs/", default="imagini_produs/no_img_available.jpg")
 
     def __str__(self):
         return self.nume_produs
+
+
+
 
 
 
