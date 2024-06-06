@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='product',
             name='imagine_produs',
-            field=models.ImageField(default='mark/no img available', upload_to='imagini_produs/'),
+            field=models.ImageField(default='imagini_produs/no_img_available.jpg', upload_to='imagini_produs/'),
         ),
         migrations.AddField(
             model_name='product',
